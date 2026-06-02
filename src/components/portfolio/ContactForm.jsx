@@ -7,7 +7,7 @@ const initial = { name: "", mobile: "", email: "", description: "" };
 function validate(v) {
   const errs = {};
   if (!v.name.trim()) errs.name = "Name is required";
-  if (!/^[+\d\s-]{7,20}$/.test(v.mobile.trim()))
+  if (!/^\d{10}$/.test(v.mobile.trim()))
     errs.mobile = "Enter a valid mobile number";
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.email.trim()))
     errs.email = "Invalid email";
@@ -22,8 +22,19 @@ export function ContactForm() {
   const [status, setStatus] = useState("");
 
   const update = (key) => (e) => {
-    setValues((v) => ({ ...v, [key]: e.target.value }));
-    if (errors[key]) setErrors((er) => ({ ...er, [key]: undefined }));
+   let value = e.target.value;
+
+   if(key === "mobile"){
+    value = value.replace(/\D/g, "");
+
+    value = value.slice(0, 10);
+   }
+
+   setValues((v) => ({ ...v, [key]: value}));
+
+   if(errors[key]){
+    setErrors((er) => ({...er, [key]: undefined }));
+   }
   };
 
   const onSubmit = async (e) => {
@@ -69,7 +80,7 @@ export function ContactForm() {
               value={values.name}
               onChange={update("name")}
               placeholder="Full name"
-              maxLength={100}
+              maxLength={50}
               className="w-full h-10 rounded-md border border-input bg-background px-3 text-sm"
             />
             {errors.name && <p className="text-xs text-destructive">{errors.name}</p>}
@@ -78,26 +89,35 @@ export function ContactForm() {
           <div className="grid gap-5 sm:grid-cols-2">
             <div className="space-y-2">
               <label htmlFor="cf-mobile" className="text-sm font-medium">Mobile number</label>
+
+          <div className="flex">
+            <span className="inline-flex items-center h-10 px-3 rounded-l-md border border-r-0 border-input bg-background text-sm">
+              +91
+            </span>
+
               <input
                 id="cf-mobile"
                 type="tel"
                 value={values.mobile}
                 onChange={update("mobile")}
-                placeholder="+91-XXXXXXXXXX"
-                maxLength={20}
+                placeholder="XXXXXXXXXX"
+                maxLength={10}
+                pattern="[0-9]{10}"
                 className="w-full h-10 rounded-md border border-input bg-background px-3 text-sm"
               />
+            </div>
               {errors.mobile && <p className="text-xs text-destructive">{errors.mobile}</p>}
             </div>
 
             <div className="space-y-2">
               <label htmlFor="cf-email" className="text-sm font-medium">Email</label>
               <input
-                id="cf-email"
+                id="email"
                 type="email"
                 value={values.email}
                 onChange={update("email")}
                 placeholder="you@email.com"
+                pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$"required
                 maxLength={255}
                 className="w-full h-10 rounded-md border border-input bg-background px-3 text-sm"
               />

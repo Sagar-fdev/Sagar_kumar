@@ -12,11 +12,15 @@ export function About() {
   return (
     <section id="about" className="relative py-32 px-6">
 
-                <div className="max-w-5xl mx-auto">
-                  <Link to="/" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-smooth mb-8">
-                    <ArrowLeft className="h-4 w-4" /> Back to Home
-                  </Link>
-                  </div>
+
+      <div className="max-w-5xl mx-auto flex justify-between items-center mb-8">
+
+          <Link to="/" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-smooth mb-8">
+          <ArrowLeft className="h-4 w-4" /> Back to Home
+          </Link>
+
+          <a href="./public/resumee.pdf" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-smooth mb-8">Download Resume</a> 
+      </div>
 
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
