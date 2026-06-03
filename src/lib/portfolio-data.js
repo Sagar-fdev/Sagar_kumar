@@ -14,7 +14,7 @@ export const profile = {
 export const projects = [
   { slug: "Word-Game", title: "Word-Game", tag: "Game",
     description: "Realtime fun game with three options Animals,Foods and Sports",
-    about: "HEllo Ji",
+    about: "This is a Fun Game, play in free time to sharp your mind.",
     tech: ["React", "JavaScript","HTML5","CSS"],
     image: "/WordGame.png",
     accent: "from-Orange-400 to-cyan-500",

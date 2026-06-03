@@ -34,7 +34,7 @@ export function SupportDialog() {
         className="bg-gradient-primary text-primary-foreground shadow-glow hover:opacity-90 transition-smooth animate-pulse-glow"
       >
         <Heart className="mr-2 h-4 w-4 fill-current" />
-        Buy me a coffee
+        click to pay
       </Button>
 
       {open && (
@@ -53,7 +53,7 @@ export function SupportDialog() {
             >
               <X className="h-4 w-4" />
             </button>
-            <h2 className="text-2xl font-bold">Buy me a coffee ☕</h2>
+            <h2 className="text-2xl font-bold">Consider Supporting ❤️</h2>
             <p className="text-sm text-muted-foreground mt-1">
               Any amount keeps me building. Pay via UPI on any Indian banking app.
             </p>
