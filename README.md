@@ -1,7 +1,5 @@
 # Sagar Portfolio (React + Vite + Tailwind v4)
 
-Plain JavaScript port of the Lovable TanStack Start portfolio.
-
 ## Run
 
 ```bash
