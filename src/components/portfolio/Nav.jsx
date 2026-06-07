@@ -13,13 +13,13 @@ export function Nav() {
             className="text-gradient font-black text-2xl"
             style={{
               textShadow:
-                "0 0 12px oklch(0.82 0.2 165 / 0.6), 0 0 24px oklch(0.9 0.22 155 / 0.4)",
+                "0 0 12px #8d3b08(0.82 0.2 165 / 0.6), 0 0 24px #c6865d(0.9 0.22 155 / 0.4)",
             }}
           >
             SD
           </span>
           <span className="text-[10px] font-medium text-muted-foreground mt-0.5">
-            sagar.dev
+            <p class="text-[#c6865d]">sagar developer</p>
           </span>
         </Link>
         <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">

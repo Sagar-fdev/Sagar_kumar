@@ -1,12 +1,11 @@
 export const profile = {
   name: "Sagar Kumar Singh",
-  role: "Full-Stack Developer & Creative Designer",
+  role: "Frontend Developer & Creative Designer",
   bio: "I craft delightful digital experiences blending clean code, motion, and thoughtful design. Currently exploring the intersection of 3D, AI, and the web.",
   location: "India",
   email: "sagarkr2138@gmail.com",
   phone: "+919122690422",
   instagram: "https://instagram.com/the_sagar_singh",
-  /*facebook: "https://facebook.com/yourhandle",..*/
   whatsapp: "https://wa.me/+919122690422",
   github: "https://github.com/Sagar-fdev",
 };
@@ -15,7 +14,7 @@ export const projects = [
   { slug: "Word-Game", title: "Word-Game", tag: "Game",
     description: "Realtime fun game with three options Animals,Foods and Sports",
     about: "This is a Fun Game, play in free time to sharp your mind.",
-    tech: ["React", "JavaScript","HTML5","CSS"],
+    tech: ["JavaScript","HTML5","CSS"],
     image: "/WordGame.png",
     accent: "from-Orange-400 to-cyan-500",
     liveUrl: "https://trywordgame.vercel.app/", },
@@ -26,16 +25,4 @@ export const projects = [
     image: "/SunDown.png",
     accent: "from-amber-400 to-Orange-500",
     liveUrl: "https://practecing-cloneweb.vercel.app/#",  },
- /* { slug: "pixel-forge", title: "Pixel Forge", tag: "Design Tool",
-    description: "Browser-based pixel art editor with layers, animation timeline and PNG/GIF export.",
-    tech: ["Canvas API", "Vite", "Zustand"], accent: "from-fuchsia-400 to-pink-500" },
-  { slug: "lumen-cms", title: "Lumen CMS", tag: "Open Source",
-    description: "Headless CMS for indie developers — git-backed, type-safe, ridiculously fast.",
-    tech: ["Next.js", "Postgres", "tRPC"], accent: "from-amber-400 to-orange-500" },
-  { slug: "orbit-tasks", title: "Orbit Tasks", tag: "Productivity",
-    description: "A keyboard-first task manager with AI assist, weekly reviews and calendar sync.",
-    tech: ["Tauri", "Rust", "React"], accent: "from-violet-400 to-indigo-500" },
-  { slug: "atlas-3d", title: "Atlas 3D", tag: "WebGL Experience",
-    description: "Interactive 3D globe visualizing real-time global data feeds with shader-driven effects.",
-    tech: ["Three.js", "GLSL", "React"], accent: "from-rose-400 to-red-500" },..*/
 ];

@@ -6,7 +6,7 @@ import { SupportDialog } from "../SupportDialog.jsx";
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow px-6 pt-24">
-      {/* Floating quick-contact buttons */}
+
       <div className="fixed right-4 md:right-6 top-1/2 -translate-y-1/2 z-40 flex flex-col gap-3">
         <a href={`tel:${profile.phone}`} aria-label="Call"
           className="h-11 w-11 rounded-full flex items-center justify-center bg-card/80 backdrop-blur-md border border-primary/30 text-primary shadow-glow hover:bg-primary hover:text-primary-foreground transition-smooth">

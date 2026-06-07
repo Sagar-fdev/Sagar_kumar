@@ -5,7 +5,6 @@ import { profile } from "@/lib/portfolio-data.js";
 const links = [
   { name: "Email", value: profile.email, href: `mailto:${profile.email}`, Icon: Mail, color: "from-emerald-400 to-teal-500" },
   { name: "Instagram", value: "@yourhandle", href: profile.instagram, Icon: Instagram, color: "from-pink-500 to-fuchsia-500" },
- /* { name: "Facebook", value: "facebook.com", href: profile.facebook, Icon: Facebook, color: "from-blue-500 to-indigo-500" }, ..*/
   { name: "WhatsApp", value: "Chat with me", href: profile.whatsapp, Icon: MessageCircle, color: "from-green-400 to-emerald-500" },
   { name: "GitHub", value: "@yourhandle", href: profile.github, Icon: Github, color: "from-slate-400 to-slate-600" },
 ];
@@ -20,7 +19,7 @@ export function ContactSection() {
             Let's <span className="text-gradient">connect</span>
           </h2>
           <p className="mt-4 text-muted-foreground max-w-xl mx-auto">
-            Have an idea, opportunity, or just want to say hi? Pick your favorite way to contact.
+           Pick your favorite way to contact.
           </p>
         </div>
 

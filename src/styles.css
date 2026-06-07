@@ -49,9 +49,6 @@
 
 :root {
   --radius: 1rem;
-
-  /* Vintage Retro Film */
-
   --background: #e7e3db;
   --foreground: #353e4e;
 
@@ -127,7 +124,7 @@
   --card: #2E3440;
   --card-foreground: #e7dfd1;
 
-  --primary: #D08770;   /* faded orange */
+  --primary: #D08770;
   --primary-foreground: #000000;
 
   --secondary: #434C5E;
@@ -136,7 +133,7 @@
   --muted: #A7A29A;
   --muted-foreground: #b8b2a7;
 
-  --accent: #000000;    /* faded teal */
+  --accent: #000000;
   --accent-foreground: #020202;
 
   --border: rgba(0, 0, 0, 0.08);

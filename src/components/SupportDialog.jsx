@@ -55,7 +55,7 @@ export function SupportDialog() {
             </button>
             <h2 className="text-2xl font-bold">Consider Supporting ❤️</h2>
             <p className="text-sm text-muted-foreground mt-1">
-              Any amount keeps me building. Pay via UPI on any Indian banking app.
+              Pay via UPI on any Indian banking app.
             </p>
             <div className="space-y-4 pt-4">
               <div className="flex items-center justify-between gap-2 rounded-lg border border-border bg-muted/50 p-3">

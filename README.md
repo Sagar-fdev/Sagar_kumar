@@ -1,29 +1,41 @@
-# Sagar Portfolio (React + Vite + Tailwind v4)
+# Sagar Portfolio
 
-## Run
+## About
+A modern and responsive personal portfolio website built with React.js and Tailwind CSS to showcase my projects, skills, and achievements.
 
-```bash
+## Features
+Responsive design for all devices.
+Modern UI/UX
+Project Showcase Section.
+Contact Section
+About Section
+Download Resume option.
+Forms submission section 
+
+## Tech
+React.js
+Tailwind CSS
+Javascript
+Vite
+Git & GitHub
+
+## Project Featured
+Word Game
+Sundown
+
+## Installation
+git clone https://github.com/Sagar-fdev/Sagar_kumar.git
+cd portfolio-js
 npm install
 npm run dev
-```
 
-Open http://localhost:5173
+# Live Demo
+https://sagarportfolio-theta.vercel.app/
 
-## Build
+## Author
+Sagar Kumar
 
-```bash
-npm run build
-npm run preview
-```
-
-## Edit your info
-- Profile + projects: `src/lib/portfolio-data.js`
-- UPI ID: `src/components/SupportDialog.jsx`
-
-## Contact form backend
-
-Copy `.env.example` to `.env` and fill in your Supabase URL and publishable (anon) key.
-The form inserts rows into a `contact_submissions` table with columns:
-`name, mobile, email, description` (plus auto `id`, `created_at`).
-Create that table and allow public INSERT via RLS.
-# MeriPortfolio
+## Contact
+Email: sagarkr2138@gmail.com
+GitHub: https://github.com/Sagar-fdev
+Linkein: in/sagar-kumar-101932227
